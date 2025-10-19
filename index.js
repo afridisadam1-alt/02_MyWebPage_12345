@@ -3,8 +3,7 @@ const port = 8000;
 
 http.createServer(function(req, res) { 
     res.writeHead(200, { "Content-Type": "text/html" });
-    res.end("<!DOCTYPE html><html><body><h1>Hello World! Want to check changes on server side</h1><p>This is a paragraph.</p></body></html>");
-
-    }).listen(port, function() { 
+    res.end("<!DOCTYPE html><html><body><h1>Hello World!</h1><p>This is a paragraph and want to check changes on server side.</p></body></html>");
+}).listen(port, function() { 
         console.log(`Node server is running on port ${port}...`); 
 }); 
